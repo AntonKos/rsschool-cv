@@ -164,7 +164,7 @@ footer a:hover {
     top: 0;
     left: 0;
     height: 100%;
-    background: #4e4e4e;
+    background: #fff9a9;
 }
 
 .resume .icon i,
@@ -189,6 +189,12 @@ footer a:hover {
 
 .resume .resume_right ul li {
     margin-bottom: 10px;
+}
+
+.resume .resume_right .resume_work ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .resume .resume_right {
