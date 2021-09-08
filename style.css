@@ -197,6 +197,14 @@ footer a:hover {
     justify-content: space-between;
 }
 
+.game_image {
+    width: 100px;
+    /* height: 100px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .resume .resume_right {
     width: 520px;
     background: #ffffff;
