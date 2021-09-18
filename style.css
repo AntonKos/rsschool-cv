@@ -80,8 +80,6 @@
     }
     
     .resume aside .resume_profile img {
-        /* width: 60%;
-        height: 60%; */
         border-radius: 50%;
     }
     
@@ -118,7 +116,7 @@
     }
     
     .resume aside .resume_item:last-child {
-        padding-top: 100px;
+        padding-top: 300px;
     }
     
     .resume aside .resume_item:last-child ul {
@@ -205,7 +203,7 @@
     
     .game_image {
         width: 100px;
-        height: 40px;
+        height: 60px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -213,10 +211,16 @@
     
     .resume_work li {
         position: relative;
+        padding: 5px;
     }
     
     .resume_work li:hover {
         color: red;
+    }
+    
+    .resume_work .info {
+        display: flex;
+        align-items: center;
     }
     
     .link-wrapper::before {
@@ -292,6 +296,9 @@
     }
     
     @media (max-width: 680px) {
+        .resume aside .resume_item:last-child {
+            padding-top: 100px;
+        }
         .resume aside .resume_profile figure {
             width: auto;
         }
