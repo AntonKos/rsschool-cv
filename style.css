@@ -15,6 +15,11 @@
         background: #ffffff;
     }
     
+    h5,
+    h6 {
+        font-size: 12px;
+    }
+    
     .bold {
         font-weight: 700;
         font-size: 20px;
@@ -75,8 +80,6 @@
     }
     
     .resume aside .resume_profile img {
-        /* width: 60%;
-        height: 60%; */
         border-radius: 50%;
     }
     
@@ -113,7 +116,7 @@
     }
     
     .resume aside .resume_item:last-child {
-        padding-top: 100px;
+        padding-top: 300px;
     }
     
     .resume aside .resume_item:last-child ul {
@@ -177,6 +180,7 @@
     }
     
     .resume_right .resume_about .title h2,
+    .resume_right .resume_about header h3,
     .resume_right .resume_about header h2 {
         line-height: 35px;
     }
@@ -199,7 +203,7 @@
     
     .game_image {
         width: 100px;
-        height: 40px;
+        height: 60px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -207,6 +211,16 @@
     
     .resume_work li {
         position: relative;
+        padding: 5px;
+    }
+    
+    .resume_work li:hover {
+        color: red;
+    }
+    
+    .resume_work .info {
+        display: flex;
+        align-items: center;
     }
     
     .link-wrapper::before {
@@ -220,7 +234,7 @@
     }
     
     .resume .resume_right {
-        width: 520px;
+        width: 100%;
         background: #ffffff;
         padding: 25px;
     }
@@ -232,8 +246,22 @@
         position: relative;
     }
     
-    .resume_right h2.bold {
+    .resume_right h2.bold,
+    .resume_right h3.bold {
         padding-top: 8px;
+    }
+    
+    pre {
+        white-space: pre-wrap;
+        /* css-3 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
     }
     
     .resume_right .resume_about {
@@ -255,32 +283,22 @@
         padding-top: 5px;
     }
     
+    @media screen and (max-width:1000px) {
+        .resume {
+            margin: 10px;
+        }
+    }
+    
     @media (max-width: 582px) {
         header {
             line-height: 40px;
         }
-        /* .bold {
-            font-weight: 700;
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-        .bold_name {
-            font-weight: 700;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-        .semi-bold {
-            font-size: 12px;
-        }
-        .simple_bold {
-            font-size: 10px;
-        }
-        .regular {
-            font-size: 15px;
-        } */
     }
     
-    @media (max-width: 500px) {
+    @media (max-width: 680px) {
+        .resume aside .resume_item:last-child {
+            padding-top: 100px;
+        }
         .resume aside .resume_profile figure {
             width: auto;
         }
