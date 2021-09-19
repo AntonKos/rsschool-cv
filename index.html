@@ -212,18 +212,19 @@
                         </div>
                     </li>
                     <li>
+
                         <div class="example_code">
                             <pre><code class="language-javascript">function handleArrayOfIndexes() {
                                 let index
                                 let y = 7
-                                for (let i = 0; i < lengthOfArrayOfIndexesForSorting; i++) {
+                                for (let i = 0; i &lt; lengthOfArrayOfIndexesForSorting; i++) {
                                 do {
                                     index = Math.floor(Math.random() * arrayOfIndexes.length) 
                                     }
                                     while (collision(index))
                                     arrayOfIndexesForSorting.push(index)
                                     }
-                                 for (let i = 0; i < arrayOfIndexesForSorting.length; i++) {
+                                 for (let i = 0; i &lt; arrayOfIndexesForSorting.length; i++) {
                                     brickGrid[arrayOfIndexes[arrayOfIndexesForSorting[i]]] = y
                                     y += 2
                                     }
