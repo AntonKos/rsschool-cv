@@ -220,7 +220,7 @@
     
     .resume_work .info {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
     }
     
     .link-wrapper::before {
@@ -248,7 +248,7 @@
         max-width: 230px;
         /* Ширина подсказки */
         left: 0;
-        top: 4em;
+        top: 2em;
         /* Положение подсказки */
         background: #3989c9;
         /* Синий цвет фона */
