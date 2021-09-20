@@ -111,7 +111,7 @@
     .resume aside .resume_item:last-child,
     .resume .resume_right .resume_languages {
         border-bottom: 0px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         padding-top: 25px;
     }
     
