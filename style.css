@@ -238,6 +238,27 @@
         background: #ffffff;
         padding: 25px;
     }
+    /* Выводим саму подсказку */
+    
+    [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        /* Выводим текст */
+        position: absolute;
+        /* Абсолютное позиционирование */
+        width: 200px;
+        /* Ширина подсказки */
+        left: 0;
+        top: 4em;
+        /* Положение подсказки */
+        background: #3989c9;
+        /* Синий цвет фона */
+        color: #fff;
+        /* Цвет текста */
+        padding: 0.5em;
+        /* Поля вокруг текста */
+        border-radius: 5px;
+        /* Скругляем уголки */
+    }
     
     .resume .resume_right .icon {
         width: 35px;
