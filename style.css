@@ -245,7 +245,7 @@
         /* Выводим текст */
         position: absolute;
         /* Абсолютное позиционирование */
-        width: 200px;
+        max-width: 230px;
         /* Ширина подсказки */
         left: 0;
         top: 4em;
@@ -258,6 +258,7 @@
         /* Поля вокруг текста */
         border-radius: 5px;
         /* Скругляем уголки */
+        z-index: 3;
     }
     
     .resume .resume_right .icon {
